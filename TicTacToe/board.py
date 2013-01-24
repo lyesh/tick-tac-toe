@@ -15,6 +15,7 @@ class Board():
         
         self.draw_o(0,0)
         self.draw_x(4,0)
+        pass
         
         self.canvas.grid()
     
