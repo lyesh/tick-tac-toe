@@ -2,6 +2,9 @@ import tkinter as tk
 
 class Board():
 
+    def get_player_piece(self):
+        pass
+
     def finish_up(self):
         self.frame.quit()
 
@@ -36,6 +39,7 @@ class Board():
         self.canvas.create_oval(x1,y1,x2,y2)
     
     def __init__(self):
+        self.canvas= None
         self.frame = tk.Frame()
         self.frame.grid()
         self.draw_board()
@@ -45,6 +49,4 @@ class Board():
                                command=self.finish_up)
         quitButton.grid()
         
-        self.frame.mainloop(0)
-
-
+        
